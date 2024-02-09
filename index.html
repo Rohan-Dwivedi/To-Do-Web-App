@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo App</title>
+
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="media-query.css" />
+		<script
+			src="https://kit.fontawesome.com/34162fcf4d.js"
+			crossorigin="anonymous"
+		></script>
+		<script defer src="Task.js"></script>
+		<script defer src="Module.js"></script>
+		<script defer src="Script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="circle left top" id="circle1"></div>
+			<div class="circle left bottom" id="circle2"></div>
+			<div class="circle right top" id="circle3"></div>
+			<div class="circle right bottom" id="circle4"></div>
+			<div class="app">
+				<div class="banner">
+					<div class="hoverDisplay">
+						<h3 id="name">Your Pending Task</h3>
+						<i class="fa-solid fa-sun"></i>
+						<i class="fa-solid fa-moon" id="hide"></i>
+						<h3 id="today">Monday, Oct 03</h3>
+					</div>
+				</div>
+				<div class="inputBox">
+					<input
+						type="text"
+						name="task"
+						id="task"
+						placeholder="Add a new task..."
+					/>
+					<div class="submit">
+						<i class="fa-solid fa-circle-check" id="taskSubmit"></i>
+					</div>
+				</div>
+				<div class="tabs-box">
+					<div class="tabs" id="all">All</div>
+					<div class="tabs" id="incomplete">Incomplete</div>
+					<div class="tabs" id="completed">Completed</div>
+				</div>
+				<div class="scroll">
+					<div class="tab1 content">
+						<div class="task">
+							<div class="checkbox">
+								<i class="fa-solid fa-circle-check" id="check"></i>
+							</div>
+							<div class="text">
+								<p></p>
+							</div>
+							<div class="delete">
+								<i class="fa-solid fa-trash-alt" id="delete"></i>
+							</div>
+						</div>
+					</div>
+					<div class="tab2 content"></div>
+					<div class="tab3 content"></div>
+				</div>
+				<div class="taskBar tabs-box">
+					<div class="tabs" id="complete-all">Complete All Tasks</div>
+					<div class="tabs" id="taskCount">0 Tasks Left</div>
+					<div class="tabs" id="clear-completed">Clear Completed</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
